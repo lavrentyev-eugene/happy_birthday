@@ -17,6 +17,10 @@ async def get_aircraft_flight_data(
         return FileResponse(path)
     return Response('Wrong string, LUL)00))00))0')
 
+@app.get("")
+async def get_aircraft_flight_data():
+    return Response('Hi there, general Kenobi')
+
 
 if __name__ == "__main__":
     # print(hashlib.sha3_256('1234'.encode()).hexdigest())
